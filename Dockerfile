@@ -9,7 +9,8 @@ ADD config.pl /usr/abills/libexec/config.pl
 RUN cp /usr/abills/misc/apache/abills_httpd.conf /etc/apache2/sites-enabled/; \
 mkdir -p -m 755 /var/log/httpd/; \
 apachectl configtest; \
-/usr/abills/misc/perldeps.pl apt-get --batch;
+ usr/abills/misc/perldeps.pl apt-get --batch;
+ADD misc/Certs/* /usr/abills/Certs/
 
 EXPOSE 9443
 
