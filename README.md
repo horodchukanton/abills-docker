@@ -4,7 +4,8 @@ Based on debian and allows you only to run webinterface
 
 # Usage:
 Provide existing ABillS DB credentials to ./config.pl
-Run script to fetch and build latest available ABillS release image
+
+Run script to fetch and build latest available ABillS Base release image
   ./download_and_build.sh
 
 # After build
