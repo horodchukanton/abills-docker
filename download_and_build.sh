@@ -17,5 +17,5 @@ rm -f abills.tar.gz
 
 cd ..
 
-# docker build . -t "abills-base:$VERSION$PREFIX"
+docker build . -t "abills-base:$VERSION$PREFIX"
 
