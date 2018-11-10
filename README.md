@@ -1,6 +1,7 @@
 # abills-docker
-ABillS Base Dockerfile. 
-Based on debian. Allows to run webinterface.
+ABillS Base Dockerfile. \ 
+Based on Ubuntu. Allows to run webinterface.\
+Uses s6 supervisor to allow running several processes in a container.\
 
 **Needs external configured DB to run**
 
@@ -16,6 +17,6 @@ Run with:
 
   docker run --rm -p 9443:9443 abills-base
   
-# Running on existing abills folder
-If you have prebuilt image you can specify it as a docker volume:
+# Running on existing ABillS folder
+If you have prebuilt image you can specify existing ABillS folder as a docker volume:
   docker run --rm -p 9443:9443 -v /usr/abills:/usr/abills abills-base
